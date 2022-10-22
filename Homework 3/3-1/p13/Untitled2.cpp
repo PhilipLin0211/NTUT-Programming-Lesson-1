@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 double Power(double,int);
-void main(int)
+void main(void)
 {
 	int k;
 	double Ans;
@@ -18,8 +18,6 @@ double Power(double X,int n)
 	int i;
 	double PowerXn = 1;
 	for(i = 1; i <= n; i++)
-	{
 		PowerXn = PowerXn*X;
-	}
 	return PowerXn;
 }
