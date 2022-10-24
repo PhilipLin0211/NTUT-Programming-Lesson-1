@@ -5,9 +5,11 @@ int main()
     unsigned int i;
     unsigned long long int j;
     float a[200];
-    a[0] = 0;
+    
+	a[0] = 0;
     a[1] = 1;
-    printf("請輸入數字0~186: ");
+    
+	printf("請輸入數字0~186: ");
     scanf("%d", &i);
 
     for(j = 2; j <= i; j++)
