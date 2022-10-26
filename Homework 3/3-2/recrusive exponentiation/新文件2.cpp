@@ -4,15 +4,18 @@
 double intpower(double x, int n)
 {
     double result;
-    if(n > 1 && n % 2 != 0)
+    
+	if(n > 1 && n % 2 != 0)
 	{
 		result = x * intpower(x, (n - 1) / 2) * intpower(x, (n - 1) / 2);
 	}
+	
     if(n > 1 && n % 2 == 0)
 	{
 		result = intpower(x, n / 2) * intpower(x, n / 2);
 	}
-    if(n == 1) return x;
+    
+	if(n == 1) return x;
     else return result;
 }
 
